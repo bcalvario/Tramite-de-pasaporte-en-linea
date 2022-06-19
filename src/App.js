@@ -14,6 +14,7 @@ import Cita from './components/cita';
 import Cita2 from './components/cita2';
 import Cita3 from './components/cita3';
 import 'react-calendar/dist/Calendar.css';
+import Exito from './components/exito';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <Route path='cita' element={ <Cita /> } />
     <Route path='cita2' element={ <Cita2 /> } />
     <Route path='cita2/cita3' element={ <Cita3 /> } />
+    <Route path='cita2/cita3/exito' element={ <Exito /> } />
     <Route path='*' element={ <Navigate replace to="/"/> }/>
   </Route>
 </Routes> 

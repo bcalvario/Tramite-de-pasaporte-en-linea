@@ -31,7 +31,7 @@
      
   }
 
-  .myButton {
+.myButton {
 	box-shadow: -2px 8px 7px -7px #635e3f;
 	background:linear-gradient(to bottom, #5b2034 5%, #5b2034 100%);
 	background-color:#5b2034;
@@ -455,4 +455,78 @@
     border-radius: 20.768px;
     font-size: 15px;
     display: flex;
+  }
+
+  .horario{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+  }
+  .columna{
+    display: flex;
+    place-items: center;    
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 5;    
+
+  }
+  .but_horario{
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: #c3e3f6;
+    border-radius: 200px;
+    padding: 10px;
+  }
+  .but_horario2{
+    box-sizing: border-box;
+    background: #c98f8f;
+    border-radius: 100px;
+  }
+
+  .but_horario {
+    box-shadow: -2px 8px 7px -7px #635e3f;
+    background:linear-gradient(to bottom, #6fb0d8 5%, #c3e3f6 100%);
+    background-color:#6fb0d8;
+    border-radius:28px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:10px;
+    font-weight:bold;
+    padding:13px 35px;
+    text-decoration:none;
+    text-shadow:0px 2px 0px #c3e3f6;
+  }
+  .but_horario:hover {
+    background:linear-gradient(to bottom, #c3e3f6 5%, #c3e3f6 100%);
+    background-color:#c3e3f6;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  .but_horario2 {
+    box-shadow: -2px 8px 7px -7px #635e3f;
+    background:linear-gradient(to bottom, #c98f8f 5%, #c98f8f 100%);
+    background-color:#c98f8f;
+    border-radius:28px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:10px;
+    font-weight:bold;
+    padding:13px 35px;
+    text-decoration:none;
+    text-shadow:0px 2px 0px #c98f8f;
+  }
+  .but_horario2:hover {
+    background:linear-gradient(to bottom, #c98f8f 5%, #c98f8f 100%);
+    background-color:#c98f8f;
+  }
+  .myButton2:active {
+    position:relative;
+    top:1px;
   }

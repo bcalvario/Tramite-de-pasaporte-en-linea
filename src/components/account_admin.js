@@ -8,7 +8,7 @@ const Account_Admin = () => {
             <h4>Citas </h4>     
             </div>
             <div class='right'>
-                <Crud/> 
+                <CrudAdmin/> 
             </div>           
         </div>
         <div class="left2">            

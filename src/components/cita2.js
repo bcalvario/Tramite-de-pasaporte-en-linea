@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Calendar from 'react-calendar'; 
 import '../App.css';
+import { Outlet, Link } from "react-router-dom"
 
 function Cita2() {
  const [date, setDate] = useState(new Date())
@@ -45,12 +46,20 @@ return (
     </div>
 
    <div className="calendar-container">
-      <Calendar onChange={setDate} 
-      value={date}
-      nextLabel='Siguiente'
-      prevLabel='Anterior'/>
+      <div>
+        <Calendar onChange={setDate} 
+        value={date}
+        nextLabel='Siguiente'
+        prevLabel='Anterior'/>
+      </div>
+      <div>
+      <Link to="/cita2/cita3"><a class="myButton">Seleccionar Horario</a></Link>  
+      </div>
+
    </div>
    
+
+
  </div>
   )
 
